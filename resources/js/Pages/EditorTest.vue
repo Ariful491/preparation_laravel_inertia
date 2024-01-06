@@ -9,6 +9,10 @@ import TableHeader from '@tiptap/extension-table-header'
 import TableRow from '@tiptap/extension-table-row'
 
 import Underline from '@tiptap/extension-underline'
+import MenuIcon from 'vue-material-design-icons/Menu.vue';
+import FormatBold from 'vue-material-design-icons/FormatBold.vue'
+
+
 
 const editor = useEditor({
     content: '<p>I’m running Tiptap with Vue.js. 🎉</p>',
@@ -41,7 +45,7 @@ const editor = useEditor({
                                 @click="editor.chain().focus().toggleBold().run()"
                                 :disabled="!editor.can().chain().focus().toggleBold().run()"
                                 :class="{ 'bg-blue-100': editor.isActive('bold') }">
-                            bold
+                             <FormatBold/>
                         </button>
                         <button class="py-1 px-4 bg-blue-400 hover:bg-blue-900   m-1 rounded"
                                 @click="editor.chain().focus().toggleItalic().run()"
