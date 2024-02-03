@@ -198,12 +198,9 @@ const editor = useEditor({
                 <EditorContent :editor="editor"/>
             </div>
         </div>
-
-
     </div>
-
+    
 </template>
-
 <style >
 button {
     padding: 10px;
